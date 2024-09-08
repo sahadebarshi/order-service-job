@@ -1,0 +1,22 @@
+spring:
+  application:
+    name : order-service
+  quartz:
+    job-store-type : memory
+    properties:
+      org:
+        quartz:
+          threadPool:
+            threadNamePrefix: book-store-order-scheduler
+            threadCount: 2
+        jobStore:
+          useProperties: true
+
+jobs:
+  orderJob: '*/30 * * ? * *'
+
+server:
+  port : 8083
+
+proxy:
+  port: 8080
