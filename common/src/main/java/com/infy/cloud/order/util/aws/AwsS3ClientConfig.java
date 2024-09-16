@@ -12,8 +12,8 @@ public class AwsS3ClientConfig {
 
     public static AmazonS3 getS3Client() {
         AWSCredentials credentials = new BasicAWSCredentials(
-                "AKIAZQ3DNNWAC4WOEXOE",
-                "47kwILMxZ/dKyzK1xDnmIuCNMc0hT0MEmFbZ0t3W"
+                "",
+                ""
         );
 
         return   AmazonS3ClientBuilder
